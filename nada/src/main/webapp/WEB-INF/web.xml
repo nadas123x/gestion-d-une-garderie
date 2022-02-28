@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="5.0">
+
+  <display-name>nada</display-name>
+  <welcome-file-list>
+    <welcome-file>memberRegistration.jsp</welcome-file>
+       <welcome-file>loginn.jsp</welcome-file>
+        <welcome-file>indexx.jsp</welcome-file>
+         <welcome-file>Update.jsp</welcome-file>
+          <welcome-file>Delete.jsp</welcome-file>
+        <welcome-file>indexxx.jsp</welcome-file>
+         <welcome-file>updatee.jsp</welcome-file>
+          <welcome-file>deletee.jsp</welcome-file>
+              <welcome-file>prindex.jsp</welcome-file>
+         <welcome-file>prupdate.jsp</welcome-file>
+          <welcome-file>prdelete.jsp</welcome-file>
+          
+          
+           <welcome-file>vUpdate.jsp</welcome-file>
+          <welcome-file>Vmessage.jsp</welcome-file>
+          
+           <welcome-file>rqindex.jsp</welcome-file>
+         <welcome-file>rqupdate.jsp</welcome-file>
+          <welcome-file>rqdelete.jsp</welcome-file>
+          
+             <welcome-file>vetementformulaire.jsp</welcome-file>
+          
+           <welcome-file>indexp.jsp</welcome-file>
+         <welcome-file>updatep.jsp</welcome-file>
+          <welcome-file>deletep.jsp</welcome-file>
+       
+           <welcome-file>Upload.jsp</welcome-file>
+               <welcome-file>Message.jsp</welcome-file>
+               
+       <welcome-file>loginsuccess.jsp</welcome-file>
+          <welcome-file>contact.jsp</welcome-file>
+            <welcome-file>llogin.jsp</welcome-file>
+              <welcome-file>user-form.jsp</welcome-file>
+                <welcome-file>user-list.jsp</welcome-file>
+                  <welcome-file>Error.jsp</welcome-file>
+   
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <servlet-name>userservlet</servlet-name>
+    <servlet-class>usermanagement.web.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userservlet</servlet-name>
+    <url-pattern>/userServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <description></description>
+    <servlet-name>vuploadrservlet</servlet-name>
+    <servlet-class>net.codejava.vupload.web.FilevUploadDBServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vuploadservlet</servlet-name>
+    <url-pattern>/vuploadServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+    <description></description>
+    <servlet-name>vetementservlet</servlet-name>
+    <servlet-class>vetements.VetementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vetementservlet</servlet-name>
+    <url-pattern>/VetementServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <servlet-name>Registration</servlet-name>
+    <servlet-class>Register.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Regist</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <servlet-name>Postulation</servlet-name>
+    <servlet-class>net.codejava.upload.FileUploadDBServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Postulation</servlet-name>
+    <url-pattern>/uploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>java.net.javaguides.login.web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ParentServlet</display-name>
+    <servlet-name>ParentServlet</servlet-name>
+    <servlet-class>main.java.net.javaguides.controller.ParentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParentServlet</servlet-name>
+    <url-pattern>/ParentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Register</display-name>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>Register.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>ContactServlet</display-name>
+    <servlet-name>ContactServlet</servlet-name>
+    <servlet-class>contact.ContactServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>contact</servlet-name>
+    <url-pattern>/ContactServlet</url-pattern>
+  </servlet-mapping>
+<servlet>
+    <description></description>
+    <display-name>ProfServlet</display-name>
+    <servlet-name>ProfServlet</servlet-name>
+    <servlet-class>login.sumit.registration.LoginRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfServlet</servlet-name>
+    <url-pattern>/loginRegister</url-pattern>
+  </servlet-mapping>
+</web-app>
+  </element>

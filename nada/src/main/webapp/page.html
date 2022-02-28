@@ -1,0 +1,133 @@
+<link rel="stylesheet" type="text/css" href="page.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styleschat.css">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="jquery.convform.css">
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="jquery.convform.js"></script>
+<script type="text/javascript" src="custom.js"></script>
+
+
+<div class="container">
+  <div class="box">
+    <span></span>
+    
+    <div class="content">
+      <h2>Inscription </h2>
+      <p></p>
+       <a href="http://localhost:8080/nada/inscriptionenf.html"> Savoir plus</a>
+    </div>
+  </div>
+  <div class="box">
+    <span></span>
+    <div class="content">
+      <h2>Contactez nous</h2>
+      <p></p>
+       <a href="http://localhost:8080/nada/contact.jsp" >Savoir plus</a>
+    </div>
+  </div>
+  <div class="box">
+    <span></span>
+    <div class="content">
+      <h2>Nos tarifs  </h2>
+   
+      <p></p>
+   <a href="http://localhost:8080/nada/tarifs.jsp" >Savoir plus</a>
+    </div>
+  </div>
+</div>
+  <div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+
+
+
+
+
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Bonjour,êtes vous?" name="category">
+        <option value="Parent"> Parent</option>
+        <option value="Professeur">Professeur</option>
+                <option value="Visiteur">Visiteur</option>
+        
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="Parent">
+          <input type="text" name="Parent" data-conv-question="Veuillez entrer votre nom">    
+       
+      </div>
+  </div>
+
+      <input type="text" name="name" data-conv-question="Veuillez entrer votre nom">
+
+      <input type="text" data-conv-question="Bienvenue Mme {name}, <br> C'est un plaisir de vous accueillir." data-no-answer="true">
+
+     <select data-conv-question="Comment puisse je vous aider?" name="category">
+        <option value="Visiteur">   Je veux inscrire mon enfant </option> 
+     
+        <option value="Visiteur">Je veux savoir les tarifs</option>
+        
+               
+                   </select>
+                   
+              <input type="text" data-conv-question="Avec plaisir Mme {name}, <br> C'est simple,vous devez cliquer sur 'inscription' tout à gauche,puis ,en bas de la page vous allez trouver un lien d'inscription." data-no-answer="true">
+<select data-conv-question="Sinon ,vous trouvez ci le lien directement (N'oubliez pas de visiter notre faq pour plus de conseils!):">
+											<option value="google" data-callback="google">FAQ</option>
+											<option value="bing" data-callback="bing">Formulaire d'inscription</option>
+									</select>
+ <select data-conv-question="Avez vous d'autres questions?" name="category">	                                
+	                                 <option value="Visiteur">   Je veux faire des donations </option> 
+     
+        <option value="Visiteur">Je veux postuler</option>  
+	                                </select>
+	                                <div data-conv-fork="Avez vous d'autres questions Mme {nname}?">
+	                                    <div data-conv-case="yes">
+	                                       <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+		                                    	<option value="Je veux faire des donations">Je veux faire des donations</option>
+		                                    	<option value="Je veux postuler">Je veux postuler</option>
+		                                    </select>
+	                                    </div>
+	                                    <div data-conv-case="no">
+		                                    <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+		                                    	<option value="yes">Yes</option>
+		                                    	<option value="no">No..</option>
+		                                    </select>
+       
+      </div>
+      </div>
+        
+   
+
+      <select data-conv-question="Quel type">
+        <option value="Fournitures">Fournitures scolaires</option>
+                <option value="Fournitures">Vêtement</option>
+        
+                <option value="Fournitures">Argent</option>
+        
+      </select>
+
+  	</form>
+	</div>
+	</div>
+	 <script>
+                function google(stateWrapper, ready) {
+        			window.open("http://localhost:8080/nada/indexfaq.html");
+        			ready();
+        		}
+        		function bing(stateWrapper, ready) {
+        			window.open("http://localhost:8080/nada/loginenf.jsp");
+        			ready();
+        		}
+        		</script>

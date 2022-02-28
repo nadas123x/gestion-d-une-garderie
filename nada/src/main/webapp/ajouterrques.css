@@ -1,0 +1,237 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: transparent ;
+        background-image: url("https://static8.depositphotos.com/1106647/888/v/600/depositphotos_8882116-stock-illustration-bird-and-butterflies.jpg");
+    
+    width: 100%;
+    height: 600px; 
+}
+
+.color-palette {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 10px;
+    width: auto;
+    height: 50%;
+}
+
+img {
+    height: 100%; 
+    width: auto;
+}
+
+
+.colors-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+p {
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Karla', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 5px;
+    
+}
+
+.macaron {
+    background: black;
+}
+
+.blush {
+    background: #9bd1e3;
+}
+
+.nude {
+    background: #E2B091;
+
+}
+
+.chocolat {
+    background: #874E4C;
+
+}
+
+.cafenoir {
+    background: #32485C;
+
+}
+
+.glass {
+    background: #e7a054;
+}
+
+.chill {
+    background: black;
+}
+
+.coral {
+    background: #3DDAD8;
+
+}
+
+.bondi {
+    background: #2A93D5;
+
+}
+
+.marina {
+    background: #135589;
+
+}
+
+.tropical {
+    background: #F5AB99;
+}
+
+.sunset {
+    background: #FEB47B;
+}
+
+.heatwave {
+    background: #FF7E5F;
+
+}
+
+.paradise {
+    background: #765285;
+
+}
+
+.nightfall {
+    background: #351C4D;
+
+}
+
+.ivory {
+    background: #a4d3a3;
+}
+
+.azul {
+    background: #A0C1B8;
+}
+
+.bolivia {
+    background: #e7a054;
+
+}
+
+.jacaranda {
+    background: #726A95;
+
+}
+
+.malbec {
+    background: #351F39;
+
+}
+
+.cream {
+    background: #E9DCCD;
+}
+
+.petal {
+    background: #E3BAB3;
+}
+
+.burgundy {
+    background: #613A43;
+
+}
+
+.fresh {
+    background: #849974;
+
+}
+
+.charcoal {
+    background: #36384C;
+
+}
+
+.rosa {
+    background: #F2AD9F;
+}
+
+.ruby {
+    background: #F26968;
+}
+
+.limestone {
+    background: #DFE2D2;
+
+}
+
+.venice {
+    background: #6CBF84;
+
+}
+
+.moss {
+    background: #323339;
+
+}
+
+.chiffon {
+    background: #F8F3E6;
+}
+
+.vanilla {
+    background: #E8CC8F;
+}
+
+.buttercup {
+    background: #EFAA52;
+
+}
+
+.rust {
+    background: #AB3E16;
+
+}
+
+.mahogany {
+    background: #48120E;
+
+}
+
+.cashmere {
+    background: #CBC5C1;
+}
+
+.french {
+    background: #A2AAB0;
+}
+
+.white {
+    background: #EBECED;
+
+}
+
+.denim {
+    background: #4C586F;
+
+}
+
+.gunmetal {
+    background: #3E3E3B;
+
+}

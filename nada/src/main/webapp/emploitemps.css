@@ -1,0 +1,43 @@
+body {
+	font-size: small;
+	background-color: transparent;
+    background-image: url("https://static8.depositphotos.com/1106647/888/v/600/depositphotos_8882116-stock-illustration-bird-and-butterflies.jpg");
+}
+table {
+	margin-top:10em ;
+	border: medium solid black;
+	border-collapse: collapse;
+	width: 100%;
+}
+table tr th, td {
+	text-align: center;
+	padding: 1.5px;
+}
+table tr th {
+	border: medium solid black;
+	background-color: #ff80c0;
+	text-decoration: underline;
+}
+table tr td {
+	border: thin solid gray;
+}
+.bg-rouge {
+	background-color: white;
+}
+.bg-rouge a {
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+}
+.nobordertop {
+	border-top: 52;
+}
+.noborderleft {
+	border-left: 12;
+}
+.noborderright {
+	border-right: none;
+}
+.noborderbottom {
+	border-bottom: 15;
+}

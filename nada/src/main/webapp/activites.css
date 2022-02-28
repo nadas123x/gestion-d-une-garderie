@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+  background: #ffc600;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+.a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 40px;
+    
+}
+.panel {
+  background: transparent;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+ 
+  transition:
+    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    background 0.2s;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel1 {
+  background: transparent;
+      background-image: url("http://img.over-blog-kiwi.com/1/91/02/53/20200501/ob_4fc702_chansons-comptines-et-poesies-sur-les.jpg");
+}
+
+.panel2 {
+  background: #aece82;
+   background-image: url(https://i.ytimg.com/vi/vrocY02z1Ds/mqdefault.jpg);
+}
+
+.panel3 {
+  background: #804040;
+     background-image: url(https://image.freepik.com/vecteurs-libre/aidez-kangourou-trouver-chemin-paume-labyrinthe-jeu-labyrinthe-pour-enfants_162137-33.jpg);
+  
+     ;
+  
+}
+
+.panel4 {
+  background: #9fe8e6;
+       background-image: url(https://devinettedujour.com/wp-content/uploads/2013/03/charade-facile-07.jpg);
+  
+}
+.panel5 {
+	     
+	
+  background: #ff80c0;
+  background-image: url(https://www.plusdemamans.com/wp-content/uploads/livre-couleurs.jpg);
+}
+
+.panel > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+
+.panel.open-active > *:first-child {
+  transform: translateY(0);
+}
+
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.panel p {
+  font-size: 0.8em;
+  opacity: 0.3;
+}
+
+.panel p:nth-child(2) {
+  font-size: 2.5em;
+}
+
+.panel.open {
+  flex: 5;
+  font-size: 40px;
+}
